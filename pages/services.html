@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			margin:0;
+			padding: 0;
+			background: #262626;
+			font-family: sans-serif;
+		}
+		.container{
+			width: 1280px;
+			margin: 70px auto 0;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		.container .box{
+			position: relative;
+			width: 300px;
+			height: 300px;
+			background: #ff0;
+			margin: 10px;
+			box-sizing: border-box;
+			display: inline-block;
+		}
+		.container .box .imgBox {
+			position: relative;
+			overflow: hidden;
+
+		}
+		.container .box .imgBox img{
+			max-width: 100%;
+			transition: transform 2s;
+			max-height: 300px;
+		}
+		.container .box:hover .imgBox img{
+			transform:scale(1.2);
+
+		}
+		.container .box .details{
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			bottom: 10px;
+			background:rgba(0,0,0,.8);
+			transform: scaleY(0);
+			transition: transform .5s;
+		}
+			.container .box:hover .details{
+				transform:scaleY(1);
+
+			}
+		.container .box .details .content{
+			position: absolute;
+			top:50%;
+			transform: translateY(-50%);
+			padding: 15px;
+			color: #000
+		}
+		.container .box .details .content h2{
+			margin: 0;
+			padding: 0;
+			font-size: 20px;
+			color: #ff0;
+		}
+		.container .box .details .content p{
+			margin: 10px 0 0;
+			padding: 0;
+			
+
+		}
+
+
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="box">
+		<div class="imgBox">
+			<img src="https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="300px" width="300px">
+		</div>
+		<div class="details">
+			<div class="content">
+				<h2>Consultation</h2>
+                  <p>We offer consultation services on the different type of flies to use.</p>
+			
+	</div>
+	</div>
+	</div>
+	<div class="box"><div class="imgBox">
+			<img src="https://images.pexels.com/photos/281962/pexels-photo-281962.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="300px" width="300px">
+		</div>
+		<div class="details">
+			<div class="content">
+				<h2>Recommendation</h2>
+                  <p>We recommend you to our best stores within your region.</p>
+			
+	</div>
+	</div></div>
+	<div class="box"><div class="imgBox">
+			<img src="https://images.pexels.com/photos/264771/pexels-photo-264771.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="300px" width="300px">
+		</div>
+		<div class="details">
+			<div class="content">
+				<h2>Packaging</h2>
+                  <p>We offer packaging services to local suppliers.</p>
+			
+	</div>
+	</div></div>
+	<div class="box"><div class="imgBox">
+			<img src="https://images.pexels.com/photos/46148/aircraft-jet-landing-cloud-46148.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="300px" width="300px">
+		</div>
+		<div class="details">
+			<div class="content">
+				<h2>Delivert</h2>
+                  <p>We offer delivery services to our customers all over the world</p>
+			
+	</div>
+	</div></div>
+	<div class="box"><div class="imgBox">
+			<img src="https://images.pexels.com/photos/1591062/pexels-photo-1591062.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="300px" width="300px">
+		</div>
+		<div class="details">
+			<div class="content">
+				<h2>After sales</h2>
+                  <p> Reach us through our emails for any concern,</p>
+			
+	</div>
+	</div></div>
+	<div class="box"><div class="imgBox">
+			<img src="https://images.pexels.com/photos/53621/calculator-calculation-insurance-finance-53621.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="300px" width="300px">
+		</div>
+		<div class="details">
+			<div class="content">
+				<h2>Sales</h2>
+                  <p>We sell your product on your behalf</p>
+			
+	</div>
+	</div></div>
+	<div class="box"><div class="imgBox">
+			<img src="https://images.pexels.com/photos/261679/pexels-photo-261679.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="300px" width="300px">
+		</div>
+		<div class="details">
+			<div class="content">
+				<h2>Partnership</h2>
+                  <p>We offer partnership contracts</p>
+			
+	</div>
+	</div></div>
+	<div class="box"><div class="imgBox">
+			<img src="https://images.pexels.com/photos/1413420/pexels-photo-1413420.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="300px" width="300px">
+		</div>
+		<div class="details">
+			<div class="content">
+				<h2>Other Products</h2>
+                  <p>We offer a huge variety of jewellery at affordable prices</p>
+			
+	</div>
+	</div></div>
+</div>
+</body>
+</html>
